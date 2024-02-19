@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --color-back-1: bisque;
+    --color-emphasis: rgb(141, 92, 32);
+    --width-content: 1200px;
+    --font-titulos: "Amita", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../img/background.png);
+    background-size: cover;
+}
+
+.width-content {
+    max-width: var(--width-content);
+    margin: 0 auto;
+}
+
+header img:nth-of-type(2) {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    z-index: 2;
+    width: 20vw;
+}
+
+header img:nth-of-type(1) {
+    width: 100%;
+}
+
+h1 {
+    display: none;
+}
+
+h2, h3 {
+    font-family:  var(--font-titulos);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    position: relative;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+/* Barra de navegación */
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-back-1);
+    z-index: 2;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid black;
+    padding: 10px;
+}
+
+.nav-ul >li {
+    list-style: none;
+    padding: 10px;
+
+}
+
+.nav-ul >li:hover {
+    background-color: var(--color-emphasis);
+    color: white;
+    border-radius: 10px;
+}
+
+.nav-ul >li >a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+}
+
+/* Main */
+
+article p {
+    font-size: 20px;
+}
+
+#destinacio >div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article {
+    max-width: 50%;
+    padding: 10px;
+    border: 20px solid transparent;
+}
+
+article:hover {
+    border: 20px solid var(--color-emphasis);
+
+}
+
+article img {
+    width: 100%;
+}
+
+#serveis >div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#serveis article {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    padding: 10px;
+    border: 20px solid transparent;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#serveis article h3 {
+    font-size: 1.7rem;
+}
+
+
+
+.icon {
+    width: 25%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--color-back-1);
+    width: 100%;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer-div > p {
+    font-family:  var(--font-titulos);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.footer-div > img {
+    width: 100px;
+}
+
+.footer-div > div > img {
+    height: 32px;
+}
